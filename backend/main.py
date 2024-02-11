@@ -1,4 +1,3 @@
-
 import json
 import logging
 import os
@@ -129,6 +128,8 @@ async def upload(req: Request, exercise: int):
     extension = ".mp4"
     if req.headers.get('content-type') == "video/quicktime":
         extension = ".mov"
+    else: 
+        raise HTTPException(status_code=400, detail="Content type must be video/mp4 or video/quicktime")
     
     get_running_loop().run_in_executor(None, lambda: analyze(id, exercise, extension, video_bytes))
     
@@ -160,7 +161,6 @@ async def wait_for_analyze(id: UUID, request: Request):
             return
         
         result_video_file = result["video_file"]
-        print(result_video_file.name)
         videos[id] = result_video_file
         del result["video_file"]
         

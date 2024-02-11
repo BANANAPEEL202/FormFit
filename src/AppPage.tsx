@@ -207,7 +207,13 @@ export const AppPage = () => {
 
 									sse.current.addEventListener('error', () => {
 										notifications.show({
-											message: 'Failed to open SSE connection.',
+											icon: (
+												<IconX style={{ width: rem(18), height: rem(18) }} />
+											),
+											color: 'red',
+											title: 'Error',
+											autoClose: 10_000,
+											message: 'Error during SSE connection.',
 										});
 										sse.current?.close();
 										sse.current = undefined;
