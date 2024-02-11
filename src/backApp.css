@@ -1,8 +1,15 @@
+:root body {
+	background-color: black;
+}
+
 .backgroundImage {
 	//background: linear-gradient(to bottom, #EE4266 0%,blue 100%);
 	background: black;
-	height: 100vh;
-	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 .addName {

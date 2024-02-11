@@ -60,8 +60,8 @@ export const AppPage = () => {
 	const sse = useRef<EventSource | undefined>();
 
 	return (
-		<div className='backgroundImage'>
-			<Center style={{ width: '100%', height: '100%' }}>
+		<>
+			<Center style={{ width: '100%', height: '100%' }} p='md'>
 				{state.state === 'upload' || state.state === 'uploading' ? (
 					<Stack align='center' justify='center'>
 						<div className='addName'>
@@ -287,20 +287,24 @@ export const AppPage = () => {
 					</Stack>
 				) : state.state === 'analyzing' ? (
 					<Stack align='center' justify='center'>
-						<Loader size='xl' />
+						<Loader size='xl' color='#4186d9' />
 						<Text className='analyzingLoad' ta='center'>
 							Analyzing your video with our advanced, powerful algorithms. 💪
 						</Text>
-						<Text c='dimmed' ta='center'>Video Id: {state.id}</Text>
+						<Text c='dimmed' ta='center'>
+							Video Id: {state.id}
+						</Text>
 					</Stack>
 				) : state.state === 'result' ? (
 					<Stack align='center' justify='center'>
-						<Title className='analyzedVideo'>
+						<Title className='analyzedVideo' ta='center'>
 							Your Video Has Been Analyzed!
 						</Title>
 						<Group justify='center' gap='xl'>
 							<Paper p='md'>
-								<Title order={2}>Your {numToExercise(exercise)} Feedback</Title>
+								<Title order={2} ta='center'>
+									Your {numToExercise(exercise)} Feedback
+								</Title>
 								<Accordion maw={rem(270)}>
 									{state.feedback
 										.sort((a) => (a.satisfactory ? 1 : 0))
@@ -341,7 +345,7 @@ export const AppPage = () => {
 										))}
 								</Accordion>
 							</Paper>
-							<video height={360} ref={videoRef} controls>
+							<video width='100%' ref={videoRef} controls>
 								<source src={state.video} type={OUTPUT_MIME}></source>
 							</video>
 						</Group>
@@ -370,6 +374,6 @@ export const AppPage = () => {
 					</Stack>
 				) : null}
 			</Center>
-		</div>
+		</>
 	);
 };
