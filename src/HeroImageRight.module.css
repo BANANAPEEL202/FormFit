@@ -1,0 +1,75 @@
+.root {
+	height: 100%;
+	background-color: #000000;
+	background-size: cover;
+	background-position: center right;
+	background-image: linear-gradient(
+			250deg,
+			rgba(130, 201, 30, 0) 0%,
+			#000000 70%
+		),
+		url(https://i.imgur.com/APOLquJ.png);
+	background-repeat: no-repeat;
+	padding-top: calc(var(--mantine-spacing-xl) * 3);
+	padding-bottom: calc(var(--mantine-spacing-xl) * 3);
+}
+
+.inner {
+	display: flex;
+	justify-content: space-between;
+
+	@media (max-width: $mantine-breakpoint-md) {
+		flex-direction: column;
+	}
+}
+
+.image {
+	@media (max-width: $mantine-breakpoint-md) {
+		display: none;
+	}
+}
+
+.content {
+	padding-top: calc(var(--mantine-spacing-xl) * 2);
+	padding-bottom: calc(var(--mantine-spacing-xl) * 2);
+	margin-right: calc(var(--mantine-spacing-xl) * 3);
+	@media (max-width: $mantine-breakpoint-md) {
+		margin-right: 0;
+	}
+}
+
+.title {
+	color: var(--mantine-color-white);
+	font-family: Greycliff CF, var(--mantine-font-family);
+	font-weight: 900;
+	line-height: 1.05;
+	max-width: rem(500px);
+	font-size: rem(48px);
+
+	@media (max-width: $mantine-breakpoint-md) {
+		max-width: 100%;
+		font-size: rem(34px);
+		line-height: 1.15;
+	}
+}
+
+.description {
+	color: var(--mantine-color-white);
+	opacity: 0.75;
+	max-width: rem(500px);
+
+	@media (max-width: $mantine-breakpoint-md) {
+		max-width: 100%;
+	}
+}
+
+.control {
+	padding-left: rem(50px);
+	padding-right: rem(50px);
+	font-family: Greycliff CF, var(--mantine-font-family);
+	font-size: rem(22px);
+
+	@media (max-width: $mantine-breakpoint-md) {
+		width: 100%;
+	}
+}

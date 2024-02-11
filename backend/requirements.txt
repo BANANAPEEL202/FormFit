@@ -1,0 +1,8 @@
+ez-setup==0.9
+#opencv-python-headless==4.9.0.80
+numpy==1.26.3
+fastapi==0.109.2
+uvicorn==0.27.0.post1
+multipledispatch==1.0.0
+sse_starlette==2.0.0
+mediapipe==0.10.9
