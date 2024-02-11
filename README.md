@@ -3,4 +3,12 @@
 
 FormFit revolutionizes fitness by providing feedback on exercise form through cutting-edge AI technology, allowing users to perfect technique, prevent injuries and maximize workout effectiveness.
 
-# Hacklytics 2024 - Around the World
+# User Guide 
+Access FormFit through formfit.tech
+
+Follow these guidelines to ensure your video is properly analyzed!
+- Please do NOT use Chromium-based browsers, as Chrome does not support the mp4v codec and will not display your input video properly. 
+- Ensure the length of the uploaded video does not exceed 5 seconds. 
+- Record all exercises from the side view. 
+- Make sure the user and background have a high contrast and ensure there are no others in background.
+- Your shoes must be visible in the recording.
