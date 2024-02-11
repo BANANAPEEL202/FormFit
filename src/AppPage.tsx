@@ -351,7 +351,7 @@ export const AppPage = () => {
 										))}
 								</Accordion>
 							</Paper>
-							<video width='100%' ref={videoRef} controls>
+							<video width='100%' style={{ maxWidth:720 }} ref={videoRef} controls>
 								<source src={state.video} type={OUTPUT_MIME}></source>
 							</video>
 						</Group>
