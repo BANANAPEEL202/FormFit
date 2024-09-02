@@ -1,5 +1,10 @@
+### *Georgia Tech Hacklytics 2024 Best Sports (2nd) and Best Health (3rd) Hack winner
+
 # FormFit
 FormFit revolutionizes fitness by providing feedback on exercise form through cutting-edge AI technology, allowing users to perfect technique, prevent injuries and maximize workout effectiveness.
+
+[![Demo Video](https://i.imgur.com/XrmdMNV.png)](https://youtu.be/G-IylrP0bKY)
+
 
 # User Guide 
 Access FormFit through [formfit.tech](https://formfit.tech).
@@ -11,3 +16,4 @@ Follow these guidelines to ensure your video is properly analyzed!
 - Record all exercises from the side view. 
 - Make sure the user and background have a high contrast and ensure there are no others in background.
 - Check that your shoes are visible in the recording.
+
