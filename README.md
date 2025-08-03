@@ -7,7 +7,7 @@ FormFit revolutionizes fitness by providing feedback on exercise form through cu
 
 
 # User Guide 
-Access FormFit through [formfit.tech](https://formfit.tech).
+Try FormFit [here](https://bananapeel202.github.io/FormFit/).
 
 Follow these guidelines to ensure your video is properly analyzed!
 - If using a laptop or Android device, please do NOT use Chromium-based browsers, as Chrome does not support the mp4v codec and will not display your input video properly. Instead, the recommended browser is Safari, and it can be accessed through a laptop or on mobile.
